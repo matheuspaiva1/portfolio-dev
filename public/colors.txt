@@ -1,0 +1,19 @@
+bg-color-light: #E9E9E9
+bg-color-dark: #1E1F22
+font-color-light: #212121
+font-color-dark: #FFFFFF;
+button-color/background-imgs: #512DA8;
+icon-colors: #656565
+font-color-card-projects: #656565;
+background-color-lang-card: #D2D1D0;
+font-color-link-project>hover : #616161;
+background-button>hover: #764FD2;
+bg-color-card-dark: #222326;
+background-card-light: #F6F6F6;
+
+
+
+
+
+
+
