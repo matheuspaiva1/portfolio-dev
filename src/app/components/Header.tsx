@@ -14,7 +14,7 @@ export default function Header() {
   const closeModal = () => setShowModal(false);
 
   return (
-    <header className="">
+    <header className="mt-4">
       <div className='flex items-center justify-center'>
       {colorMode === "light" ? <img src="/devindev-light.svg" alt="logo" className='mr-12'/> : <img src="/devindev-dark.svg" alt="logo" className='mr-12'/>}
       <ButtonTheme/>
