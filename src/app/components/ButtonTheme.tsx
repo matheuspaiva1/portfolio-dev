@@ -1,12 +1,20 @@
 /* eslint-disable @next/next/no-img-element */
+'use client'
+import { Button, useColorMode } from '@chakra-ui/react'
 import React from 'react'
+import { IoSunny } from "react-icons/io5";
+import { IoMdMoon } from "react-icons/io";
+
 
 export default function ButtonTheme() {
+  const {colorMode, toggleColorMode} = useColorMode()
   return (
     <div className="border border-zinc-300 w-12 h-7 p-0.5 rounded-3xl bg-zinc-50">
-        <button className='rounded-2xl bg-zinc-300 p-0.5'> 
-          <img src="/sun.svg" alt="sun" className="w-3.5" /> 
-        </button>
+        <Button variant="secondary" size="icon"
+        onClick={()=> toggleColorMode()} > 
+          {colorMode === "light" ? <IoSunny className=' text-zinc-500'/> : <IoMdMoon className=' text-zinc-500 ml-6'/> }
+        </Button>
+
     </div>
   )
 }
