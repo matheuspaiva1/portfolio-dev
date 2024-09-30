@@ -2,6 +2,7 @@
 'use client'
 import { Button, useColorMode } from '@chakra-ui/react'
 import React from 'react'
+import PageSobre from '../sobreMim/page'
 
 export default function Main() {
   const {colorMode} = useColorMode()
@@ -39,6 +40,8 @@ export default function Main() {
         <img src="/react.svg" alt="" />
         <img src="/ang.svg" alt="" />
       </div>}
+
+      <PageSobre/>
         
 
     </main>
