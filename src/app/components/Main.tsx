@@ -3,6 +3,7 @@
 import { Button, useColorMode } from '@chakra-ui/react'
 import React from 'react'
 import PageSobre from '../sobreMim/page'
+import PageProjects from '../projetos/page'
 
 export default function Main() {
   const {colorMode} = useColorMode()
@@ -42,6 +43,8 @@ export default function Main() {
       </div>}
 
       <PageSobre/>
+
+      <PageProjects/>
         
 
     </main>
