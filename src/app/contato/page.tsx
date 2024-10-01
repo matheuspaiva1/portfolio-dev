@@ -4,7 +4,7 @@ import { Button } from '@chakra-ui/react'
 
 export default function PageContato() {
   return (
-    <div>
+    <div id='contato'>
       <ImgSobre/>
       <h1 className="font-medium ml-4 my-4 text-sm mt-8">ENTRE EM CONTATO</h1>
       <h2 className="font-bold ml-4 my-4 text-2xl">Quer desenvolver uma ideia?</h2>

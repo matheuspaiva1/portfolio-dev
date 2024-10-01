@@ -6,7 +6,7 @@ import { FaGithub, FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa'
 export default function PageSobre() {
 
   return (
-    <div>
+    <div id='sobre-mim'>
       <ImgSobre/>
 
       <h1 className='text-3xl font-bold ml-4 '>Sobre mim</h1>

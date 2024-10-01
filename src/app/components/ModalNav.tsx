@@ -25,10 +25,10 @@ const ModalNav:React.FC<ModalProps> = ({show, close}) => {
         </button>
       </div>
       <div className="ml-8 mt-4 text-xl flex flex-col gap-10">
-        <a href="/sobreMim"><h1>Sobre mim</h1></a>
-        <a href="/projetos"><h1>Meus Projetos</h1></a>
-        <a href="/skills"><h1>Habilidades</h1></a>
-        <a href="/contato"><h1>Contato</h1></a>
+        <a href="#sobre-mim"><h1>Sobre mim</h1></a>
+        <a href="#page-project"><h1>Meus Projetos</h1></a>
+        <a href="#skills"><h1>Habilidades</h1></a>
+        <a href="#contato"><h1>Contato</h1></a>
         
         
         

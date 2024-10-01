@@ -6,7 +6,7 @@ export default function PageSkills() {
   const {colorMode} = useColorMode()
 
   return (
-    <div>
+    <div id='skills'>
       <h1 className="font-medium text-center text-sm mt-8">SKILLS</h1>
       <h2 className="font-bold text-center text-2xl">Conheça as minhas habilidades</h2>
       {colorMode === "light" ? 
