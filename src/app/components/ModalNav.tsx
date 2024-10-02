@@ -29,9 +29,6 @@ const ModalNav:React.FC<ModalProps> = ({show, close}) => {
         <a href="#page-project"><h1>Meus Projetos</h1></a>
         <a href="#skills"><h1>Habilidades</h1></a>
         <a href="#contato"><h1>Contato</h1></a>
-        
-        
-        
       </div>
 
        
