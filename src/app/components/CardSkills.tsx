@@ -12,9 +12,9 @@ const CardSkills:React.FC<CardProps>=({title, description, imgs}) => {
   const {colorMode} = useColorMode()
 
   return (
-    <div className='my-8 m-4'>
+    <div className='my-8 m-4 '>
       {colorMode === "dark" ? 
-      <div className="mt-4 bg-gray-900 p-4 rounded-lg">
+      <div className="mt-4 bg-gray-900 p-4 rounded-lg ">
         <img src={imgs} alt="" className='py-4' />
         <h1 className='font-bold text-2xl'>{title}</h1>
         <p className=''>{description}</p>
