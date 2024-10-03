@@ -5,7 +5,7 @@ import CardProjects from '../components/CardProjects';
 
 export default function PageProjects() {
   return (
-    <div id='page-project'>
+    <div id='page-project' className='md:my-16'>
       <h1 className="font-medium text-center text-sm mt-8">PROJETOS</h1>
       <h2 className="font-bold text-center text-2xl">Conheça meus projetos principais</h2>
 

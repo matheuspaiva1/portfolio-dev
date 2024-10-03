@@ -17,9 +17,11 @@ export default function Main() {
           <h1 className="text-4xl font-extrabold "> Hello World </h1>
           <p className="ml-10 my-6 text-lg">Eu sou o Matheus</p>
           <h1 className="text-4xl font-extrabold">Software Developer</h1>
-          <Button colorScheme="cyan" marginTop="2em">
-            Precisa de algum projeto?
-          </Button>
+          <a href="https://wa.me/5585994145479">
+            <Button colorScheme="cyan" marginTop="2em">
+              Precisa de algum projeto?
+            </Button>
+          </a>
         </div>
         <div className="">
           <img src="/pose1-ok.png" alt="pose 1 player" className="" />

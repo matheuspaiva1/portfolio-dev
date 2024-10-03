@@ -1,17 +1,17 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react'
-import ImgSobre from '../components/ImgSobre'
 import { FaGithub, FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa'
 
 export default function PageSobre() {
 
   return (
     <div id="sobre-mim" className='md:flex md:items-center md:justify-center'>
-      <ImgSobre  />
+      <div className="my-12 md:my-0 border-s-[30px]  border-y-[20px] border-cyan-400 w-72 md:w-[160em] md:h-56 h-64 mx-auto md:ml-40">
+        <img src="/pose2-player.png" alt="pose 2 player" className='mx-auto md:mx-0 md:w-[160em] md:h-56 bg-zinc-200'/>
+      </div>
       <div className="mt-8 md:mt-16 md:px-60">
-        <h1 className="text-3xl font-bold ml-4 md:ml-0 ">Sobre mim</h1>
-        <br />
         <div className="ml-2 p-2 md:ml-0 md:p-0">
+          <h1 className="text-3xl font-bold ml-4 md:ml-0 ">Sobre mim</h1>
           <p>
             Atualmente estou morando em Ocara-CE, cursando o 3º semestre do
             curso de Sistemas de Informação, na Universidade Federal do Ceará.
@@ -33,7 +33,7 @@ export default function PageSobre() {
         </div>
 
         <div className="flex items-center justify-center gap-8 my-4">
-          <a href="">
+          <a href="https://wa.me/5585994145479">
             <FaWhatsapp className="w-8 h-8" />
           </a>
           <a href="https://www.instagram.com/matheuss.p00/">
