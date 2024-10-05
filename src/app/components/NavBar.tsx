@@ -41,11 +41,11 @@ const NavBar = () => {
         {isMobile === false ?
           <Flex display={{ base: 'none', md: 'flex' }}>
             {navItems.map((item) => (
-              <Link key={item.href} href={item.href} passHref>
+              <a key={item.href} href={item.href}>
                 <Button as="a" variant="ghost">
                   {item.label}
                 </Button>
-            </Link>
+            </a>
             ))}
           </Flex> :
           <IconButton
@@ -66,11 +66,11 @@ const NavBar = () => {
           <DrawerBody>
             <Stack spacing={4} mt={8}>
               {navItems.map((item) => (
-                <Link key={item.href} href={item.href} passHref>
+                <a key={item.href} href={item.href}>
                   <Button as="a" variant="ghost" onClick={onClose}>
                     {item.label}
                   </Button>
-                </Link>
+                </a>
               ))}
             </Stack>
           </DrawerBody>
