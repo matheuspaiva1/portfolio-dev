@@ -1,3 +1,4 @@
+'use client'
 import CardSkills from '../components/CardSkills'
 import { useColorMode } from '@chakra-ui/react';
 
