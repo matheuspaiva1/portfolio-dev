@@ -1,3 +1,4 @@
+/* eslint-disable no-var */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { useState } from 'react';
 import {
@@ -19,8 +20,6 @@ import Link from 'next/link'; // Importando o Link do next
 
 const NavBar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const [isMobile] = useState(() => window.innerWidth < 768);
-
   const navItems = [
     { label: 'Sobre mim', href: '#sobre-mim' },
     { label: 'Projetos', href: '#page-project' },
@@ -38,7 +37,6 @@ const NavBar = () => {
         align="center"
       >
         {/* Para telas maiores */}
-        {isMobile === false ?
           <Flex display={{ base: 'none', md: 'flex' }}>
             {navItems.map((item) => (
               <a key={item.href} href={item.href}>
@@ -47,16 +45,15 @@ const NavBar = () => {
                 </Button>
             </a>
             ))}
-          </Flex> :
+          </Flex> 
           <IconButton
             aria-label="Open menu"
             icon={<IoMenuOutline />}
             onClick={onOpen}
           />
-        }
         {/* Para telas menores */}
         
-      </Flex>
+      </Flex> 
 
       {/* Drawer para navegação móvel */}
       <Drawer isOpen={isOpen} placement="right" onClose={onClose}>
@@ -76,8 +73,10 @@ const NavBar = () => {
           </DrawerBody>
         </DrawerContent>
       </Drawer>
+      
     </Box>
   );
 };
+
 
 export default NavBar;
