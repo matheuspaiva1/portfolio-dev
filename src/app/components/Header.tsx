@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 'use client'
-import React from 'react'
 import ButtonTheme from './ButtonTheme'
 import { useColorMode } from '@chakra-ui/react';
 import NavBar from './NavBar';

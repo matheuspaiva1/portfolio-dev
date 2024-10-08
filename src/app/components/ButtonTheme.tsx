@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 'use client'
 import { Button, useColorMode } from '@chakra-ui/react'
-import React from 'react'
 import { IoSunny } from "react-icons/io5";
 import { IoMdMoon } from "react-icons/io";
 

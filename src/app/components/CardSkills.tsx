@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import { useColorMode } from '@chakra-ui/react';
-import React from 'react'
 
 interface CardProps{
   title: string;

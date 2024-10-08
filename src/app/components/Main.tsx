@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 'use client'
 import { Button, useColorMode } from '@chakra-ui/react'
-import React from 'react'
 import PageSobre from '../sobreMim/page'
 import PageProjects from '../projetos/page'
 import PageSkills from '../skills/page'

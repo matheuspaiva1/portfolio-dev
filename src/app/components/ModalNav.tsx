@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 'use client'
 import { useColorMode } from '@chakra-ui/react';
-import React from 'react'
 import { IoCloseOutline } from "react-icons/io5";
 
 interface ModalProps {
