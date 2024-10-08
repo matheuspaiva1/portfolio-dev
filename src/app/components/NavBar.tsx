@@ -1,6 +1,5 @@
 /* eslint-disable no-var */
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { useState } from 'react';
 import {
   Box,
   Flex,
@@ -15,7 +14,6 @@ import {
   Stack,
 } from '@chakra-ui/react';
 import { IoMenuOutline } from "react-icons/io5";
-import Link from 'next/link'; // Importando o Link do next
 
 
 const NavBar = () => {
