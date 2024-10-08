@@ -1,4 +1,3 @@
-import React from 'react'
 import CardSkills from '../components/CardSkills'
 import { useColorMode } from '@chakra-ui/react';
 
