@@ -4,8 +4,8 @@ import { Button } from '@chakra-ui/react'
 export default function PageContato() {
   return (
     <div id='contato' className='md:flex md:items-center md:justify-center md:gap-20 md:my-24'>
-      <div className="my-12 md:my-0 border-s-[30px] border-y-[20px] border-cyan-400 w-72 md:w-[40em] md:h-56 h-64 mx-auto md:ml-40">
-        <img src="/pose2-player.png" alt="pose 2 player" className='mx-auto md:mx-0 md:w-[40em] md:h-56 bg-zinc-200'/>
+      <div className="my-12 md:my-0 w-72 md:w-[40em] md:h-[27em] h-64 mx-auto md:ml-40">
+        <img src="/pose2-player.png" alt="pose 2 player" className='mx-auto md:mx-0 md:w-[80em] md:h-[22em] '/>
       </div>
       <div className="md:ml-20 md:px-24">
         <h1 className="font-medium ml-4 my-4 text-sm mt-8">ENTRE EM CONTATO</h1>
