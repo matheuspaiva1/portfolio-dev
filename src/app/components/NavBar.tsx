@@ -1,5 +1,6 @@
 /* eslint-disable no-var */
 /* eslint-disable @typescript-eslint/no-unused-vars */
+"use client";
 import {
   Box,
   Flex,
@@ -50,6 +51,14 @@ const NavBar = () => {
         justify="space-between"
         align="center"
       >
+        {isMobile ? (
+            <IconButton
+              aria-label="Open menu"
+              icon={<IoMenuOutline />}
+              onClick={onOpen}
+            />  
+          ) : ""}
+          
         {/* Para telas maiores */}
           <Flex display={{ base: 'none', md: 'flex' }}>
             {navItems.map((item) => (
@@ -61,13 +70,7 @@ const NavBar = () => {
             ))}
           </Flex> 
 
-          {isMobile ? (
-            <IconButton
-              aria-label="Open menu"
-              icon={<IoMenuOutline />}
-              onClick={onOpen}
-            />  
-          ) : ""}
+          
         {/* Para telas menores */}
         
       </Flex> 

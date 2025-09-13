@@ -4,9 +4,9 @@ import { FaGithub, FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa'
 export default function PageSobre() {
 
   return (
-    <div id="sobre-mim" className='md:flex md:items-center md:justify-center'>
-      <div className="my-12 md:my-0 w-72 md:w-[240em] md:h-[27em] h-64 mx-auto md:ml-40">
-        <img src="/pose2-player.png" alt="pose 2 player" className='mx-auto md:mx-0 md:w-[240em] md:h-[27em] '/>
+    <div id="sobre-mim" className='md:flex md:items-center md:justify-around'>
+      <div className="my-12  w-72 md:w-[240em] md:h-[27em] h-64 mx-auto md:ml-40">
+        <img src="eu.jpg" alt="Eu" />
       </div>
       <div className="mt-8 md:mt-16 md:px-60">
         <div className="ml-2 p-2 md:ml-0 md:p-0">
