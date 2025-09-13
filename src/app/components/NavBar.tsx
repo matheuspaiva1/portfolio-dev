@@ -13,6 +13,7 @@ import {
   Button,
   Stack,
 } from '@chakra-ui/react';
+import { useEffect, useState } from 'react';
 import { IoMenuOutline } from "react-icons/io5";
 
 
@@ -24,6 +25,21 @@ const NavBar = () => {
     { label: 'Habilidades', href: '#skills' },
     { label: 'Contato', href: '#contato' },
   ];
+
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // cleanup quando o componente desmontar
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <Box>
@@ -44,11 +60,14 @@ const NavBar = () => {
             </a>
             ))}
           </Flex> 
-          <IconButton
-            aria-label="Open menu"
-            icon={<IoMenuOutline />}
-            onClick={onOpen}
-          />
+
+          {isMobile ? (
+            <IconButton
+              aria-label="Open menu"
+              icon={<IoMenuOutline />}
+              onClick={onOpen}
+            />  
+          ) : ""}
         {/* Para telas menores */}
         
       </Flex> 
